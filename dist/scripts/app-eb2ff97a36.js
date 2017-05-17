@@ -1,0 +1,5 @@
+/**
+ * Created by AKDESK17 on 5/17/2017.
+ */
+!function(){"use strict";angular.module("app",["ui.router"])}(),function(){"use strict";function t(t,e,n){}t.$inject=["$rootScope","$state","$http"],angular.module("app").run(t)}(),function(){"use strict";function t(t,e){t.state("news",{url:"/news",data:{displayName:"News"},views:{"@":{templateUrl:"app/components/news/news.html",controller:"NewsController",controllerAs:"news"}}}).state("analytics",{url:"/analytics",data:{displayName:"Analytics"},views:{"@":{templateUrl:"app/components/analytics/analytics.html",controller:"AnalyticsController",controllerAs:"analytics"}}}),e.otherwise("/news")}t.$inject=["$stateProvider","$urlRouterProvider"],angular.module("app").config(t)}(),function(){"use strict";function t(t){t.debugEnabled(!0)}t.$inject=["$logProvider"],angular.module("app").config(t)}(),angular.module("app").run(["$templateCache",function(t){t.put("app/components/news/news.html","<div></div>")}]);
+//# sourceMappingURL=../maps/scripts/app-eb2ff97a36.js.map
